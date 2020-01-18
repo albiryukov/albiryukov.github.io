@@ -613,7 +613,7 @@ ul.sub-menu {
 
 #home-slider .slider-cycle {
   position: absolute;
-  right: 250px;
+  right: 252px;
   bottom: 0;
 }
 
@@ -796,7 +796,7 @@ ul.sub-menu {
   position: absolute;
   width: 100%;
   left: 0;
-  background-position: 151px 4px;
+  background-position: 210px -5px;
 }
 
 .about-image {
