@@ -613,8 +613,8 @@ ul.sub-menu {
 
 #home-slider .slider-cycle {
   position: absolute;
-  right: 252px;
-  bottom: 0;
+	right: 240px;
+	bottom: 8px;
 }
 
 .animate-in .slider-cycle {
