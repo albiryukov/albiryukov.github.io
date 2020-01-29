@@ -1,7 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
 <head>
-    <meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -11,7 +11,12 @@
     <link href="css/animate.min.css" rel="stylesheet"> 
     <link href="css/lightbox.css" rel="stylesheet"> 
 	<link href="css/main.css" rel="stylesheet">
+	
 	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/collapsible.css" rel="stylesheet">
+	
+
+		
     <!--[if lt IE 9]>
 	    <script src="js/html5shiv.js"></script>
 	    <script src="js/respond.min.js"></script>
@@ -299,6 +304,59 @@
                         </div>
                     </div>
                 </div><!--/#accordion-->
+				
+				<!--/#раскрывающийся список-->
+                <div id="animated-example" class="сontent-accordion">
+						
+					<div id="firstCollapseMenu" class="collapse-container">
+						<h4><span class="arrow-r"></span>Система Обратного Осмоса. Польза или вред.</h4>	
+						<div>
+						  <div class="row">							
+							<div class="col-md-7">								
+								<div class="panel-body">Что такое Система обратного осмоса. Польза или вред для здоровья фильтров для очистки воды. За и против метода очищения воды системой обратного осмоса.</div>
+							</div>
+							<div class="col-md-5" class="thumb-wrap">
+								<div class="thumb-wrap">								
+									<iframe src="https://www.youtube.com/embed/N6raPIrQygg" ></iframe>
+								</div>	
+
+							</div>
+						  </div>
+						</div>
+						<h3><span class="arrow-r"></span>Второй расскрывающийся список.</h3>
+						<div>
+						  <div class="row">	
+							<div class="col-md-6" class="thumb-wrap">
+								<div class="thumb-wrap">								
+									<iframe src="https://www.youtube.com/embed/Rutz5HxzGUo?start=1305" ></iframe>
+								</div>	
+							</div>						
+							<div class="col-md-6">
+							<div class="panel-body">
+								<blockquote> В этом видео я делал сравнение двух фильтров фирмы Atoll. Это обратноосматические пяти ступенчатые фильтра с одинаковой производительностью, если информацию изучать по коробке то получается что они вообще ни чем не отличаются, даже маркировка моделей практически не отличаются. Но при этом ОГРОМНАЯ РАЗНИЦА ПО ЦЕНЕ.
+4:59 пластик корпуса отличается
+7:39 угольный картридж отличается
+10:58 механический картридж отличается 
+13:53 мембрана отличается
+20:08 краны питьевые отличаются
+21:45 накопительные баки отличаются
+24:34 гарантия на фильтра разная
+</blockquote></div>
+
+							</div>
+						  </div>
+						</div>
+						<h3><span class="arrow-r"></span>Третий вариант</h3>
+						<div>
+							<p>  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+						</div>
+					</div>
+			
+					
+				</div>
+				<!--/#раскрывающийся список-->
+
+
             </div><!--/#accordion-container-->
 
             <div id="progressbar-container">
@@ -457,6 +515,7 @@
             </div><!--/#testimonial-container-->
 
             <div class="padding"></div>
+						
 
         </div>
     </section>           
@@ -538,8 +597,26 @@
         </div>
     </footer>
     <!--/#footer-->
+	
 
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>	
+	
+    <script type="text/javascript" src="js/jquery.collapsible.min.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function () { 
+			$('#firstCollapseMenu').collapsible({
+					accordion: false,
+					accordionUpSpeed: 400,
+					accordionDownSpeed: 400,
+					collapseSpeed: 400,
+					contentOpen: null,
+					arrowRclass: 'arrow-r',
+					arrowDclass: 'arrow-d',
+					animate: true
+			});
+        });
+    </script>
+	
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script type="text/javascript" src="js/gmaps.js"></script>
@@ -547,6 +624,14 @@
     <script type="text/javascript" src="js/holder.js"></script>
     <script type="text/javascript" src="js/lightbox.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>   
+    <script type="text/javascript" src="js/main.js"></script> 
+	
+	
+	  
+	  
+	
+      <!-- END Events -->
+	
+
 </body>
 </html>
