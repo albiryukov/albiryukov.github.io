@@ -7,14 +7,16 @@
   Version: 1.1
   */
 
-  @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
-  @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
-  @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600&display=swap&subset=cyrillic');
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+  
+
 
   body {
     background: #fff;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-family: "Nunito",Helvetica,Arial,sans-serif;
+    font-weight: 400;
     font-size: 14px;
     line-height: 22px;
     color: #000;
@@ -53,8 +55,8 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-family: "Nunito",Helvetica,Arial,sans-serif;
+    font-weight: 400;
   }
 
   h1{
@@ -613,8 +615,8 @@ ul.sub-menu {
 
 #home-slider .slider-cycle {
   position: absolute;
-  right: 250px;
-  bottom: 0;
+	right: 240px;
+	bottom: 8px;
 }
 
 .animate-in .slider-cycle {
@@ -796,7 +798,7 @@ ul.sub-menu {
   position: absolute;
   width: 100%;
   left: 0;
-  background-position: 151px 4px;
+  background-position: 210px -5px;
 }
 
 .about-image {
@@ -2753,6 +2755,25 @@ span.stButton_gradient,
   border-radius: 100%;
   margin: 10px 0;
 }
+
+
+/* Адаптивное видео с YouTube */
+.thumb-wrap {
+  position: relative;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  height: 0;
+  overflow: hidden;
+}
+.thumb-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+  outline-width: 0;
+}
+
 
 /*
 
