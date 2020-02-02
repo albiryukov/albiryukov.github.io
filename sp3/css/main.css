@@ -2683,6 +2683,14 @@ span.stButton_gradient,
   color: #b38040
 }
 
+
+/*
+*
+* Material Design Icons
+* --------------------------------------------------
+*/
+
+
 /*Shortcodes CSS*/
 .bs-example{
   margin: 0 0 20px;
@@ -2692,28 +2700,85 @@ span.stButton_gradient,
   border: 1px solid #eee;
 }
 .panel-default{
-  border: 0;
+    border: 0;
+	border-left: 4px solid #8394b2;
+	margin-bottom: 10px;
 }
+
 .panel-group .panel{
   border-radius: 0;
 }
+
 .panel-group .panel+.panel{
   margin-top: 0;
 }
 
-.panel-default>.panel-heading{
-  background-color: transparent;
-  border-top: 1px solid #eee;
+.icon-wrench::before {
+	content: '\f0ad';
+	color: #b07da6;
+}
+.icon-gears::before, .icon-cogs::before {
+	content: "\f085";
+	color: #e18622;
+}
+
+.icon-check::before {
+	/* галочка */
+	content: '\f046';
+	color: #ef5829;
+}
+.icon-info-sign::before {
+	/* информация; */
+	content: '\f05a';
+	color: #7dbf26;
+}
+.icon-camera::before {
+	/* информация; */
+	content: '\f030';
+	color: #2e6da4;
+}
+.icon-question-sign::before  {
+	/* вопрос; */
+	content: '\f059';
+	color: #04a49c;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	display: inline;
+	width: auto;
+	height: auto;
+	line-height: normal;
+	vertical-align: baseline;
+	background-image: none;
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	margin-top: 0;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: inherit;
+	-webkit-font-smoothing: antialiased;
+	margin-right: 5px;
+}
+
+
+.panel-default > .panel-heading {
+	/* background-color: transparent; */
+	/* border-top: 1px solid #eee; */
+	background: #edeff1;
 }
 
 .panel-group .panel-default:first-child>.panel-heading{
   border-top: 0;
+	background: #edeff1;
 }
 
 .panel-default>.panel-heading+.panel-collapse .panel-body{
   border-top-color: #eee;
 }
-
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
   background-color: #4FCCCD;
