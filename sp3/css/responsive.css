@@ -563,15 +563,16 @@
   }
 
   #home-slider .slider-circle2 {
-    right: 22%;
+    right: 14%;
     bottom: 112px;
     width: 70px;
   }
 
   #home-slider .slider-cloud1 {
+    display: none;/* 
     right: 140px;
     bottom: 140px;
-    width: 60px;
+    width: 60px;*/
   }
 
   #home-slider .slider-cloud2 {
