@@ -557,15 +557,15 @@
 
 
   #home-slider .slider-circle1 {
-    right: 80%;
-    bottom: 100px;
-    width: 15px;
+    right: 78%;
+    bottom: 71px;
+    width: 70px;
   }
 
   #home-slider .slider-circle2 {
-    right: 78%;
-    bottom: 120px;
-    width: 10px;
+    right: 22%;
+    bottom: 112px;
+    width: 70px;
   }
 
   #home-slider .slider-cloud1 {
@@ -575,26 +575,26 @@
   }
 
   #home-slider .slider-cloud2 {
-    right: 210px;
-    bottom: 190px;
+    right: 151px;
+    bottom: 100px;
     width: 70px;
   }
 
   #home-slider .slider-cloud3 {
-    right: 35px;
-    bottom: 180px;
+    right: 202px;
+    bottom: 139px;
     width: 70px;
   }
 
   #home-slider .slider-sun {
-    right: 120px;
-    bottom: 180px;
-    width: 60px
+    right: 93px;
+    bottom: 159px;
+    width: 105px
   }
 
 
-  #home-slider .slider-cycle {
-    display: none;
+  #home-slider .slider-cycle { /* 
+    display: none;*/
   }
 
   /* Pricing Table*/
