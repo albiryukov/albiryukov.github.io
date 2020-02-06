@@ -11,7 +11,12 @@ a:focus,
 button:focus {
 	outline: none !important;
 }
-
+a, a:visited {
+	color: #000;
+}
+h5 a {
+	border-bottom: none;	
+}
 button::-moz-focus-inner {
 	border: 0;
 }
@@ -100,11 +105,11 @@ html p a:hover {
 * Typography
 */
 body {
-	font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: "Nunito",sans-serif, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
 	font-weight: 300;
-	color: rgba(21, 21, 21, 0.8);
+	color: #172a3f;
 	background-color: #fff;
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -121,7 +126,7 @@ body {
 h1, h2, h3, h4, h5, h6, [class^='heading-'] {
 	margin-top: 0;
 	margin-bottom: 0;
-	font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	color: #151515;
 }
 
@@ -186,7 +191,7 @@ h1,
 @media (min-width: 1600px) {
 	h1,
 	.heading-1 {
-		font-size: 68px;
+		font-size: 42px;
 		line-height: 1.17647;
 	}
 }
@@ -297,7 +302,7 @@ h5,
 @media (min-width: 768px) {
 	h5,
 	.heading-5 {
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 1.4;
 	}
 }
@@ -571,7 +576,7 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 .link-default, .link-default:active, .link-default:focus {
-	color: rgba(21, 21, 21, 0.8);
+	color: #172a3f;
 }
 
 .link-default:hover {
@@ -1734,7 +1739,7 @@ html .list-inline-md > * {
 }
 
 .list-inline-comma-default > li {
-	color: rgba(21, 21, 21, 0.8);
+	color: #172a3f;
 }
 
 .list-inline-comma-default a:hover {
@@ -12755,7 +12760,7 @@ button.swiper-pagination-bullet {
 	}
 	.tabs-line .nav-link {
 		padding: 7px 10px;
-		color: rgba(21, 21, 21, 0.8);
+		color: #172a3f;
 		background: transparent;
 	}
 	.tabs-line .nav-item + .nav-item .nav-link {
@@ -12788,7 +12793,7 @@ button.swiper-pagination-bullet {
 	font-size: 12px;
 	font-weight: 700;
 	line-height: 1.4;
-	color: rgba(21, 21, 21, 0.8);
+	color: #172a3f;
 	background: transparent;
 	border-bottom: 1px solid #e5e7e9;
 	text-align: center;
@@ -13110,7 +13115,7 @@ button.swiper-pagination-bullet {
 .card-corporate .card-collapse {
 	position: relative;
 	z-index: 1;
-	color: rgba(21, 21, 21, 0.8);
+	color: #172a3f;
 }
 
 .card-corporate .card-body {
