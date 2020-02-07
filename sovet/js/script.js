@@ -37,7 +37,7 @@
 		};
 
 	/**
-	 * @desc Check the element was been scrolled into the view
+	 * @desc CПроверьте, что элемент был прокручен в представлении
 	 * @param {object} elem - jQuery object
 	 * @return {boolean}
 	 */
@@ -47,7 +47,7 @@
 	}
 
 	/**
-	 * @desc Calls a function when element has been scrolled into the view
+	 * @desc Callsфункция, когда элемент прокручивается в представление
 	 * @param {object} element - jQuery object
 	 * @param {function} func - init function
 	 */
@@ -986,23 +986,3 @@
 
 	});
 }());
-
-function initMenu() {
-  $('#menu ul').hide();
-  $('#menu ul').children('.current').parent().show();
-  //$('#menu ul:first').show();
-  $('#menu li a').click(
-    function() {
-      var checkElement = $(this).next();
-      if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
-        return false;
-        }
-      if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
-        $('#menu ul:visible').slideUp('normal');
-        checkElement.slideDown('normal');
-        return false;
-        }
-      }
-    );
-  }
-$(document).ready(function() {initMenu();});

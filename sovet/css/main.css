@@ -333,9 +333,15 @@ Blog with right sidebar
 /**** Portfolio with right sidebar****/
 
 
+/* меню раскрывающееся 
+*/
+.otstup {
+	border-top: 55px solid transparent;
+	margin-top: -55px;
+}
 
-/* меню раскрывающееся */
-.sidebar-item h3 {
+
+.sidebar-item h4{
 	color: #354879;
 	margin-top: 0;
 	border-bottom: 3px solid #ececec;
@@ -386,3 +392,45 @@ ul#menu li ul li a:hover,ul#menu li ul .current a {
 .indent1 { padding-left: 1em; }
 .indent2 { padding-left: 2em; }
 /* меню раскрывающееся */
+
+/** Перелистование по разделам запись  **/
+#razdel-list {
+  display: block;
+}
+#razdel-list ul { 
+margin-left: 0px;
+}
+#razdel-list ul li {
+	font-size: 1em;
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+#razdel-list ul li:nth-child(1){
+	border-top: none;
+}
+#razdel-list ul li a {
+  display: block;
+  width: 100%;
+  padding: 7px;
+  text-decoration: none;
+  color: #cecec;
+  background: #fff;
+}
+#razdel-list ul li a:hover {
+  color: #787878;
+}
+#razdel-list ul li a.active {
+  display: block;
+  color: rgba(240,50,38,.85);
+  padding-left: 6px;
+  position: relative;
+  font-weight: bold;
+  left: 1px;
+}
+#fixed{width:200px;position:absolute;}
+#razdel-list .toc-active {
+  color: #000;
+  font-weight: bold;
+	border-right: none;
+}
+/** Перелистование по разделам запись  **/
