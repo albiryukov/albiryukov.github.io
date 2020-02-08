@@ -336,8 +336,7 @@ Blog with right sidebar
 /* меню раскрывающееся 
 */
 .otstup {
-	border-top: 55px solid transparent;
-	margin-top: -55px;
+	padding:20px; /* Внутренний отступ */
 }
 
 
@@ -417,7 +416,7 @@ margin-left: 0px;
   background: #fff;
 }
 #razdel-list ul li a:hover {
-  color: #787878;
+  color: #f03226;
 }
 #razdel-list ul li a.active {
   display: block;
@@ -429,8 +428,10 @@ margin-left: 0px;
 }
 #fixed{width:200px;position:absolute;}
 #razdel-list .toc-active {
-  color: #000;
   font-weight: bold;
 	border-right: none;
+}
+#razdel-list .toc-active a {
+  color: red;
 }
 /** Перелистование по разделам запись  **/
