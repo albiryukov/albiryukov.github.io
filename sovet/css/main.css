@@ -1,7 +1,20 @@
 /*
 * Shortcodes CSS
+
+background-color: #144F80;
+
 * --------------------------------------------------
 */
+.predypresdenie div.box-cta-thin .mytitle {	
+	font-size: 22px;
+	text-align: left;
+	line-height: 1.15;
+}
+.predypresdenie .box-minimal-icon {
+	top: 0;
+	font-size: 8em;
+	color: #fff;
+}
 
 .bs-example{
   margin: 0 0 20px;
@@ -39,7 +52,6 @@
 .panel-default>.panel-heading+.panel-collapse .panel-body{
   border-top-color: #eee;
 }
-
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
   background-color: #4FCCCD;
 }
@@ -79,7 +91,6 @@
   margin: 10px 0;
 }
 
-
 /* Адаптивное видео с YouTube */
 .thumb-wrap {
   position: relative;
@@ -96,8 +107,6 @@
   border-width: 0;
   outline-width: 0;
 }
-
-
 /* Выделения в тексте */
 mark, .mark {
 	padding: 3px 5px;
@@ -140,7 +149,7 @@ mark, .mark {
 }
 .list-marked>li+li{
 	margin-top:4px
-	}
+}
 *+.list-marked{
 	margin-top:15px
 }
@@ -171,7 +180,7 @@ p+.list-marked{
 *+.list-ordered{margin-top:15px}
 
 
-.col-md-6{flex-basis:49%}}
+.col-md-6{flex-basis:49%}
 .wrap-fluid{max-width:1920px;margin-left:auto;margin-right:auto}@media(min-width:992px){.p-wrap{max-width:600px}}
 .icon-sprite{background-image:url(../images/spritesheet.png);background-repeat:no-repeat;display:inline-block}
 .icon-sprite+h5{margin-top:20px}
@@ -227,7 +236,7 @@ text-decoration: none;
 	content: '\f030';
 	color: #2e6da4;
 }
-.fa-question-sign::before  {
+.fa-question-sign::before {
 	/* вопрос; */
 	content: '\f059';
 	color: #04a49c;
@@ -238,11 +247,11 @@ text-decoration: none;
 Blog with right sidebar
 *****************************/
 
-.single-blog{
+.single-blog {
   padding-bottom: 30px;
 }
 
-.single-blog .post-bottom{
+.single-blog .post-bottom {
   border-bottom: 1px solid #eeeeee;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -309,7 +318,6 @@ Blog with right sidebar
   padding-bottom: 55px;
 }
 
-
   /* Blog */
   .post-comment {
     padding-left: 0;
@@ -338,7 +346,6 @@ Blog with right sidebar
 .otstup {
 	padding:20px; /* Внутренний отступ */
 }
-
 
 .sidebar-item h4{
 	color: #354879;
@@ -435,3 +442,62 @@ margin-left: 0px;
   color: red;
 }
 /** Перелистование по разделам запись  **/
+
+
+
+/**********************************
+ * Адаптивная таблица
+ */
+ 
+table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+}
+.adaptive-tab table tr {
+    background: white;
+    border-bottom: 1px solid
+}
+.adaptive-tab table th, .adaptive-tab table td {
+	padding: 5px;
+}
+.adaptive-tab table td span {
+    background: #eee;
+    color: dimgrey;
+    display: none;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+}
+
+/* Simple CSS for flexbox table on mobile */
+@media(max-width: 800px) {
+	.adaptive-tab table thead {
+        left: -9999px;
+        position: absolute;
+        visibility: hidden;
+    }	
+	.adaptive-tab table tr {
+        border-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+    .adaptive-tab table td {
+        border: 1px solid;
+        margin: 0 -1px -1px 0;
+        padding-top: 35px;
+        position: relative;
+        width: 50%;
+    }
+    .adaptive-tab table td span {
+        display: block;
+    }
+}
+/** Адаптивная таблица  **/
+
