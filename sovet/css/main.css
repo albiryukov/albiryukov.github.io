@@ -13,7 +13,7 @@ background-color: #144F80;
 .predypresdenie .box-minimal-icon {
 	top: 0;
 	font-size: 8em;
-	color: #fff;
+	color: #edeff1;
 }
 
 .bs-example{
@@ -147,7 +147,7 @@ mark, .mark {
 	letter-spacing: -.03em;
 	color: #3664a1;
 }
-.list-marked>li+li{
+.list-marked > li + li{
 	margin-top:4px
 }
 *+.list-marked{
@@ -158,15 +158,20 @@ p+.list-marked{
 }
 
 /* Список нумерацией каждой строчки */
+#spisok_p li {
+	position: relative;
+	padding-left: 20px;
+	margin: 30px 0 0;
+}
 .list-ordered{
 	counter-reset:li;
 	text-align:left
 }
-.list-ordered>li{
+.list-ordered > li{
 	position:relative;
 	padding-left:15px
 }
-.list-ordered>li:before{
+.list-ordered > li:before{
 	content:counter(li,decimal) ".";
 	counter-increment:li;
 	position:absolute;top:0;
