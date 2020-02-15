@@ -162,6 +162,7 @@ p+.list-marked{
 	position: relative;
 	padding-left: 20px;
 	margin: 30px 0 0;
+	font-weight: bold;
 }
 .list-ordered{
 	counter-reset:li;
@@ -169,7 +170,7 @@ p+.list-marked{
 }
 .list-ordered > li{
 	position:relative;
-	padding-left:15px
+	padding-left:20px
 }
 .list-ordered > li:before{
 	content:counter(li,decimal) ".";
@@ -185,7 +186,6 @@ p+.list-marked{
 *+.list-ordered{margin-top:15px}
 
 
-.col-md-6{flex-basis:49%}
 .wrap-fluid{max-width:1920px;margin-left:auto;margin-right:auto}@media(min-width:992px){.p-wrap{max-width:600px}}
 .icon-sprite{background-image:url(../images/spritesheet.png);background-repeat:no-repeat;display:inline-block}
 .icon-sprite+h5{margin-top:20px}
@@ -359,93 +359,4 @@ Blog with right sidebar
 	margin-bottom: 6px;
 	padding-bottom: 8px;
 }
-
-ul#menu, ul#menu ul {
-  list-style-type:none;
-  margin: 0;
-  padding: 0;
-}
-
-ul#menu a {
-  display: block;
-  text-decoration: none;	
-}
-
-ul#menu li {
-  margin-top: 1px;
-}
-
-ul#menu li a {
-  background: #354879;
-  color: #fff;	
-  padding: 0.5em;
-}
-
-ul#menu li a:hover {
-  background: #5c76b8;
-}
-
-ul#menu li ul li a {
-  background: #ccc;
-  color: #000;
-  padding-left: 20px;
-}
-
-ul#menu li ul li a:hover,ul#menu li ul .current a {
-  background: #aaa;
-  border-left: 5px #000 solid;
-  padding-left: 15px;
-}
-
-.code { border: 1px solid #ccc; list-style-type: decimal-leading-zero; padding: 5px; margin: 0; }
-.code code { display: block; padding: 3px; margin-bottom: 0; }
-.code li { background: #ddd; border: 1px solid #ccc; margin: 0 0 2px 2.2em; }
-.indent1 { padding-left: 1em; }
-.indent2 { padding-left: 2em; }
-/* меню раскрывающееся */
-
-/** Перелистование по разделам запись  **/
-#razdel-list {
-  display: block;
-}
-#razdel-list ul { 
-margin-left: 0px;
-}
-#razdel-list ul li {
-	font-size: 1em;
-	border-top: 1px solid #ddd;
-	border-right: 1px solid #ddd;
-}
-#razdel-list ul li:nth-child(1){
-	border-top: none;
-}
-#razdel-list ul li a {
-  display: block;
-  width: 100%;
-  padding: 7px;
-  text-decoration: none;
-  color: #cecec;
-  background: #fff;
-}
-#razdel-list ul li a:hover {
-  color: #f03226;
-}
-#razdel-list ul li a.active {
-  display: block;
-  color: rgba(240,50,38,.85);
-  padding-left: 6px;
-  position: relative;
-  font-weight: bold;
-  left: 1px;
-}
-#fixed{width:200px;position:absolute;}
-#razdel-list .toc-active {
-  font-weight: bold;
-	border-right: none;
-}
-#razdel-list .toc-active a {
-  color: red;
-}
-/** Перелистование по разделам запись  **/
-
 
