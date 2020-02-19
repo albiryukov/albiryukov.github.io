@@ -183,31 +183,8 @@ p+.list-marked{
 .sprite-home-icon-05{width:62px;height:56px;background-position:-66px -76px}
 
 
-/** Описание в пунктах информационной содержаниях **/
-.panel-body {padding: 15px;}
-.panel-default > .panel-heading {background: #edeff1;}
-
-.opisanie a {
-	display: inline;
-	text-decoration: underline;
-	color: 354879;
-}
-
-.opisanie h5 a {
-text-decoration: none;	
-}
-.opisanie ul {
-	margin-left: 25px;
-}
-.opisanie .list-marked > li {
-	text-indent: 0;
-	padding-left: 15px;
-}
 
 /** иконки от шрифта FontAwesome **/
-.fa-wrench::before {
-	color: #b07da6;
-}
 .fa-gears::before, .fa-cogs::before {
 	color: #e18622;
 }
