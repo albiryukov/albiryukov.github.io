@@ -93,11 +93,6 @@ background-color: #144F80;
 
 
 /* Выделения в тексте */
-mark, .mark {
-	padding: 3px 5px;
-	color: #fff;
-	background: #41a451;
-}
 .text-strike {
 	text-decoration: line-through;
 }
