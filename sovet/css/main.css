@@ -303,4 +303,150 @@ Blog with right sidebar
 /**** Portfolio with right sidebar****/
 
 
+/* ticket meta toggle */
+.ticket-meta-toggle {
+	background: url("images/plus.png") no-repeat center center;
+	display: none;
+	height: 24px;
+	margin-right: 5px;
+	text-decoration: none !important;
+	vertical-align: top;
+	width: 24px;
+}
+
+.ticket-meta-toggle.detail-show {
+	background: url("images/minus.png") no-repeat center center;
+}
+
+.ticket-list {
+	margin: 0;
+	padding: 0;
+}
+
+.ticket-list .ticket {
+	margin: 0;
+	padding: 13px 13px 10px;
+	background: #FFF;
+	border-bottom: 1px solid #CCC;
+	overflow: hidden;
+}
+
+.ticket-list .entry {
+	background: none;
+}
+
+.ticket-list .show-all,
+.ticket-list .no-results {
+	border: 0;
+}
+
+.show-all,
+.no-results {
+	color: #d8c49a;
+	font-weight: 700;
+}
+
+.ticket-list .ticket.alt,
+.ticket-list .even {
+	background: none;
+}
+
+.ticket-list .ticket-gravatar {
+	width: 45px;
+	float: left;
+}
+
+.ticket-list .ticket-info {
+	margin: -3px 0 0 45px;
+	padding: 3px 0;
+}
+
+.ticket-list .marked-resolved {
+	padding: 10px 15px;
+}
+
+.ticket-status {
+	padding: 5px 15px 4px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	min-width: 50px;
+	display: inline-block;
+	text-align: center;
+	line-height: normal;
+}
+
+.ticket-status:hover {
+	opacity: 0.6;
+	text-decoration: none;
+}
+
+.ticket-author {
+	margin: 6px 0 0;
+	float: right;
+	color: #c6c6c5;
+	font-size: .92em;
+}
+
+.ticket-author a {
+	color: #a0a0a0;
+}
+
+.ticket-title {
+	margin: 0 0 0 10px;
+	padding: 0;
+	display: inline;
+	font-size: 1.16em;
+	font-weight: 700;
+}
+
+.ticket-meta {
+	margin: 12px 0 0;
+	padding: 10px 15px 0;
+	border-top: 1px solid #eaeae9;
+	overflow: hidden;
+	clear: both;
+	color: #333;
+	font-size: .92em;
+	list-style: none;
+}
+
+.ticket-meta a {
+	color: #333;
+}
+
+.ticket-meta small {
+	display: block;
+	color: #999;
+	font-weight: 700;
+	font-size: 10px;
+	margin-bottom: 3px;
+}
+
+.ticket-meta li {
+	margin: 0 15px 0 0;
+	padding: 0 15px 0 0;
+	border-right: 1px solid #eeeeed;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.ticket-meta li.tags{
+	max-width: 50px;
+	overflow: hidden;
+}
+
+.ticket-meta.single {
+	margin: 12px 0 0;
+	padding: 10px 15px;
+	border-width: 1px 0;
+}
+
+.ticket:hover .ticket-meta,
+.ticket:hover .update-list,
+.single-ticket .ticket-meta,
+.single-ticket .update-list {
+	opacity: 1;
+}
+
 
