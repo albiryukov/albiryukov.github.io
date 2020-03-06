@@ -63,9 +63,9 @@
 		$window.on( 'scroll', scrollHandler );
 	}
 
-	// Initialize scripts that require a loaded page
+	// Инициализировать скрипты, которые требуют загруженной страницы
 	$window.on('load', function () {
-		// Page loader & Page transition
+		// Загрузчик страниц и переход страницы
 		if (plugins.preloader.length && !isNoviBuilder) {
 			pageTransition({
 				target: document.querySelector('.page'),
@@ -91,13 +91,13 @@
 		}
 	});
 
-	// Initialize scripts that require a finished document
+	// Инициализировать сценарии, которые требуют готового документа
 	$(function () {
 		isNoviBuilder = window.xMode;
 
 
 		/**
-		 * @desc Initialize Bootstrap tooltip with required placement
+		 * @desc Инициализировать всплывающую подсказку Bootstrap с необходимым размещением
 		 * @param {string} tooltipPlacement
 		 */
 		function initBootstrapTooltip(tooltipPlacement) {
@@ -111,7 +111,7 @@
 		}
 
 		/**
-		 * @desc Initialize owl carousel plugin
+		 * @desc Инициализировать плагин Initialize owl carousel plugin
 		 * @param {object} c - carousel jQuery object
 		 */
 		function initOwlCarousel(c) {
@@ -200,14 +200,14 @@
 		}
 
 		/**
-		 * @desc Attach form validation to elements
+		 * @desc Прикрепить проверку формы к элементам
 		 * @param {object} elements - jQuery object
 		 */
 		function attachFormValidator(elements) {
 			// Custom validator - phone number
 			regula.custom({
 				name: 'PhoneNumber',
-				defaultMessage: 'Invalid phone number format',
+				defaultMessage: 'Неверный формат номера телефона',
 				validator: function () {
 					if (this.value === '') return true;
 					else return /^(\+\d)?[0-9\-\(\) ]{5,}$/i.test(this.value);
@@ -235,23 +235,25 @@
 					$this.siblings(".form-validation").text("").parent().removeClass("has-error")
 				}
 			}).regula('bind');
+			
+
 
 			var regularConstraintsMessages = [
 				{
 					type: regula.Constraint.Required,
-					newMessage: "The text field is required."
+					newMessage: "Текстовое поле обязательно для заполнения."
 				},
 				{
 					type: regula.Constraint.Email,
-					newMessage: "The email is not a valid email."
+					newMessage: "Письмо не является действительным."
 				},
 				{
 					type: regula.Constraint.Numeric,
-					newMessage: "Only numbers are required"
+					newMessage: "Требуются только цифры"
 				},
 				{
 					type: regula.Constraint.Selected,
-					newMessage: "Please choose an option."
+					newMessage: "Пожалуйста, выберите опцию"
 				}
 			];
 
@@ -731,13 +733,13 @@
 		if (plugins.rdMailForm.length) {
 			var i, j, k,
 				msg = {
-					'MF000': 'Successfully sent!',
-					'MF001': 'Recipients are not set!',
-					'MF002': 'Form will not work locally!',
-					'MF003': 'Please, define email field in your form!',
-					'MF004': 'Please, define type of your form!',
-					'MF254': 'Something went wrong with PHPMailer!',
-					'MF255': 'Aw, snap! Something went wrong.'
+					'MF000': 'Отправлено!',
+					'MF001': 'Получатель не устанавлен!',
+					'MF002': 'Форма не будет работать локально!',
+					'MF003': 'Пожалуйста, заполните поле email в форме!',
+					'MF004': 'Пожалуйста, определите тип Вашей формы!',
+					'MF254': 'Что-то не сработало в функции PHPMailer!',
+					'MF255': 'Произошла ошибка отправки формы!'					
 				};
 
 			for (i = 0; i < plugins.rdMailForm.length; i++) {
@@ -767,8 +769,8 @@
 							if (captcha.length) {
 								var captchaToken = captcha.find('.g-recaptcha-response').val(),
 									captchaMsg = {
-										'CPT001': 'Please, setup you "site key" and "secret key" of reCaptcha',
-										'CPT002': 'Something wrong with google reCaptcha'
+										'CPT001': 'Пожалуйста, настройте «ключ сайта» и «секретный ключ» reCaptcha',
+										'CPT002': 'Что-то не так с Google ReCaptcha'
 									};
 
 								formHasCaptcha = true;
