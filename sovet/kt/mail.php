@@ -1,15 +1,4 @@
 <?php
-require_once __DIR__ . '/recaptcha.php';
-$secret = "6w1LdB0TAAAAAPoB8GKdbG-XOqq8QaZ-ft2VGQ3n";
-$response = null;
- 
-$reCaptcha = new ReCaptcha($secret);
-	if ($_POST["g-recaptcha-response"]) {
-		$response = $reCaptcha->verifyResponse(
-		$_SERVER["REMOTE_ADDR"],
-		$_POST["g-recaptcha-response"]
-	);
-}
 $post = (!empty($_POST)) ? true : false;
 if($post) {
 	$email = htmlspecialchars(trim($_POST['email']));
@@ -17,7 +6,6 @@ if($post) {
 	$sub = htmlspecialchars(trim($_POST["sub"]));
 	$message = htmlspecialchars(trim($_POST['message']));
 	$error = '';
-	if(!$response) {$error .= 'Заполните капчу';}
 	if(!$name) {$error .= 'Укажите свое имя. ';}
 	if(!$email) {$error .= 'Укажите электронную почту. ';}
 	if(!$sub) {$error .= 'Укажите тему обращения. ';}
