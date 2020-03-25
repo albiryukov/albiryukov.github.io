@@ -8,7 +8,7 @@ date_default_timezone_set('Etc/UTC');
 try {
     require './phpmailer/PHPMailerAutoload.php';
 
-    $recipients = $formConfig['recipientEmail'];
+    $recipients = $formConfig['vitebskvorota@gmail.com'];
 
     preg_match_all("/([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)/", $recipients, $addresses, PREG_OFFSET_CAPTURE);
 
@@ -85,34 +85,43 @@ try {
 
     $mail = new PHPMailer();
 
-
     if ($formConfig['useSmtp']) {
-        //Tell PHPMailer to use SMTP
+        //Сообщаем PHPMailer использовать SMTP
         $mail->isSMTP();
 
-        //Enable SMTP debugging
-        // 0 = off (for production use)
-        // 1 = client messages
-        // 2 = client and server messages
+         // Включить отладку SMTP
+         // 0 = выкл (для производственного использования)
+         // 1 = клиентские сообщения
+         // 2 = сообщения клиента и сервера
+		 
+		   // -------------------------------------
+		   // Настройки вашей почты
+    	   // $mail->Host       = 'smtp.gmail.com'; // SMTP сервера GMAIL
+    	   // mail->Username   = 'YOURLOGIN'; // Логин на почте
+    	   // $mail->Password   = 'YOURPASSWORD'; // Пароль на почте
+    	   // $mail->SMTPSecure = 'ssl';
+    	   // $mail->Port       = 465;
+		   // -------------------------------------
+		   
         $mail->SMTPDebug = 0;
 
         $mail->Debugoutput = 'html';
 
-        // Set the hostname of the mail server
-        $mail->Host = $formConfig['host'];
+        // Установить имя хоста почтового сервера
+        $mail->Host = $formConfig['smtp.gmail.com'];
 
-        // Set the SMTP port number - likely to be 25, 465 or 587
-        $mail->Port = $formConfig['port'];
+        // Установить номер порта SMTP - вероятно, будет 25, 465 или 587
+        $mail->Port = $formConfig['465'];
 
-        // Whether to use SMTP authentication
+        // Использовать ли аутентификацию SMTP
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = "ssl";
 
-        // Username to use for SMTP authentication
-        $mail->Username = $formConfig['username'];
+        // Имя пользователя для использования при аутентификации SMTP
+        $mail->Username = $formConfig['vitebskvorota@gmail.com'];
 
-        // Password to use for SMTP authentication
-        $mail->Password = $formConfig['password'];
+        // Пароль для аутентификации SMTP
+        $mail->Password = $formConfig['rfrnec1981'];
     }
 
     $mail->From = $_POST['email'];

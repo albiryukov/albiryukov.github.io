@@ -341,7 +341,7 @@ class SMTP
         }
         return true;
     }
-
+		  
     /**
      * Perform SMTP authentication.
      * Must be run after hello().
@@ -353,6 +353,17 @@ class SMTP
      * @param string $workstation The auth workstation for NTLM
      * @access public
      * @return boolean True if successfully authenticated.
+	 
+	  * Выполните аутентификацию SMTP.
+      * Должен быть запущен после привет ().
+      * @ смотри привет ()
+      * @param string $ username Имя пользователя
+      * @param string $ password Пароль
+      * @param string $ authtype Тип аутентификации (PLAIN, LOGIN, NTLM, CRAM-MD5)
+      * @param string $ realm Область аутентификации для NTLM
+      * @param string $ workstation Рабочая станция авторизации для NTLM
+      * @ доступ общественности
+      * @return boolean True при успешной аутентификации.
      */
     public function authenticate(
         $username,
