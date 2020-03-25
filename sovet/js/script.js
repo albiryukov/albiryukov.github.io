@@ -33,11 +33,15 @@
 			captcha: $('.recaptcha'),
 			copyrightYear: $(".copyright-year"),
 			buttonWinona: $('.button-winona'),
-			videoOverlay: $('.video-overlay')
+			videoOverlay: $('.video-overlay'),
+			customToggle:            $( '[data-custom-toggle]' ),
+			swiper:                  $( '.swiper-container' ),
+			selectFilter: $( 'select' )
+			
 		};
 
 	/**
-	 * @desc CПроверьте, что элемент был прокручен в представлении
+	 * @desc Проверьте, что элемент был прокручен в представлении
 	 * @param {object} elem - jQuery object
 	 * @return {boolean}
 	 */
@@ -137,7 +141,7 @@
 				}
 			}
 
-			// Enable custom pagination
+			// Включить пользовательскую нумерацию страниц
 			if (c.attr('data-dots-custom')) {
 				c.on("initialized.owl.carousel", function (event) {
 					var carousel = $(event.currentTarget),
@@ -526,6 +530,9 @@
 				}
 			});
 		}
+		
+		
+		
 
 		// Google ReCaptcha
 		if (plugins.captcha.length) {
@@ -918,7 +925,8 @@
 					.trigger("scroll");
 			}
 		}
-
+		
+	
 		// Linear Progress bar
 		if (plugins.progressLinear.length) {
 			for (i = 0; i < plugins.progressLinear.length; i++) {
@@ -985,6 +993,25 @@
 				initBootstrapTooltip(tooltipPlacement);
 			})
 		}
+		
+		
+		// Select 2
+		if ( plugins.selectFilter.length ) {
+			for ( var i = 0; i < plugins.selectFilter.length; i++ ) {
+				var select = $( plugins.selectFilter[ i ] );
+
+				select.select2( {
+					dropdownParent:          $( '.pages' ),
+					placeholder:             select.attr( 'data-placeholder' ) || null,
+					minimumResultsForSearch: select.attr( 'data-minimum-results-search' ) || Infinity,
+					containerCssClass:       select.attr( 'data-container-class' ) || null,
+					dropdownCssClass:        select.attr( 'data-dropdown-class' ) || null
+				} );
+			}
+		}
+
+
+
 
 	});
 }());
