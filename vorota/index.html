@@ -2,7 +2,7 @@
 <html class="wide wow-animation" lang="en">
   <head>
     <!-- Site Title-->
-    <title>Home</title>
+    <title>Продажа подъемных гаражных ворот в Витебске от производителя</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -692,29 +692,49 @@
               <div class="col-lg-5">
                 <h4 class="heading-decorated">Рассчитать стоимость:</h4>
                 <!-- RD Mailform-->
-                <form class="rd-mailform rd-mailform_style-1" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                <form id="input-form" class="rd-mailform rd-mailform_style-1" method="post" action="" target="no-target">
 				
                   <div class="form-wrap">
-                    <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+                    <input class="form-input" id="contact-name" type="text" name="entry.1118866603">
                     <label class="form-label" for="contact-name">Ваше имя</label>
                   </div>
 				  
                   <div class="form-wrap">					
-                    <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@Numeric">
+                    <input class="form-input" id="contact-phone" type="text" name="entry.2022143687">
                     <label class="form-label" for="contact-phone">Телефон</label>
                   </div>
 				  
                   <div class="form-wrap">
-                    <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
+                    <input class="form-input" id="contact-email" type="email" name="entry.173183883">
                     <label class="form-label" for="contact-email">Email для ответа</label>
                   </div>
 					
                   <div class="form-wrap">
-                    <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+                    <textarea class="form-input" id="contact-message" name="entry.370218059"></textarea>
                     <label class="form-label" for="contact-message">Текст сообщения</label>
                   </div>
                   <button class="button button-primary" type="submit">Отправить</button>
-                </form>
+				  
+				  
+<!-- 
+<form id="input-form" action="" method="POST" target="no-target">
+  <input id="input-q1" placeholder="q1" name="q1">
+  <input id="input-q2" placeholder="q2" name="q2">
+  
+  <button id="form-submit" type="submit">SUBMIT</button>
+</form>
+
+  -->
+  
+                </form>		
+
+				<p id="input-feedback"></p>
+				<iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
+				
+
+				
+				
+
               </div>
             </div>
           </div>
@@ -774,17 +794,15 @@
             <div class="col-sm-10 col-md-6 col-lg-5 col-xl-3">
               <div class="google-map-footer">
                 <!--Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.-->
-                <!--Please note that YOUR_API_KEY should replaced with your key.-->
-                <!--Example: <div class="google-map-container" data-key="YOUR_API_KEY">
+                <!--Please note that YOUR_API_KEY should replaced with your key.  AIzaSyA8lZpOvtHeEB1Q14vrwKfkYCf50yt5vt0  -->
+                <!--Example: <div class="google-map-container" data-key="AIzaSyA8lZpOvtHeEB1Q14vrwKfkYCf50yt5vt0">
 				55.149361, 30.400806
+				55.149348, 30.400802
 				<div id=”google-map” class=”map_model” data-x="55.149361" data-y="30.400806" ></div>
 				data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45."
 				-->
-                <div class="google-map-container"  data-x="55.149361" data-y="30.400806" data-zoom="5" data-icon="images/gmap_marker.png" data-icon-active="images/gmap_marker_active.png" data-styles="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:60}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:40},{&quot;visibility&quot;:&quot;on&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;administrative.province&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;on&quot;},{&quot;lightness&quot;:30}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ef8c25&quot;},{&quot;lightness&quot;:40}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;poi.park&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#b6c54c&quot;},{&quot;lightness&quot;:40},{&quot;saturation&quot;:-40}]},{}]">
-                  <div class="google-map"></div>
-                  <ul class="google-map-markers">
-                    <li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-description="9870 St Vincent Place, Glasgow"></li>
-                  </ul>
+                <div class="google-map-container">
+                  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aac5ea2e0b9e52bd5896a498f5c8e68ef131bdc9ec4f8164d26f34e99a8e0c006&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
               </div>
             </div>
@@ -811,9 +829,44 @@
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
     <!--+photoswipe()-->
-    <!-- Javascript-->
+    <!-- Javascript
+	
+        var inputq1 = encodeURIComponent($('#contact-name').val());
+        var inputq2 = encodeURIComponent($('#contact-phone').val());
+        var inputq3 = encodeURIComponent($('#contact-email').val());
+        var inputq4 = encodeURIComponent($('#contact-message').val());
+        var q1ID = "entry.1118866603";
+        var q2ID = "entry.2022143687";
+        var q3ID = "entry.173183883";
+        var q4ID = "entry.370218059
+		
+        var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + "&" + q4ID + "=" + inputq4 + submitRef);
+		-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
-    <!-- coded by Houdini-->
+	<script>
+    $('#input-form').one('submit',function(){
+        var inputq1 = encodeURIComponent($('#contact-name').val());
+        var inputq2 = encodeURIComponent($('#contact-phone').val());
+        var inputq3 = encodeURIComponent($('#contact-email').val());
+        var inputq4 = encodeURIComponent($('#contact-message').val());
+        var q1ID = "";
+        var q2ID = "";
+        var q3ID = "";
+        var q4ID = "";
+		
+        var baseURL = 'https://docs.google.com/forms/d/1SO6Vp4kEC3v1k9WDeZ7c4YY8h-QzZnlMkEZn57RxDxM/formResponse?';		
+        var submitRef = '&submit=9022866431671866981';
+        var submitURL = (baseURL + "=" + inputq1 + "&" + "=" + inputq2 + "&" + "=" + inputq3 + "&" + "=" + inputq4 + submitRef);
+        console.log(submitURL);
+        $(this)[0].action=submitURL;
+        $('#input-feedback').text('Ваше сообщение было успешно отправлено!');
+    });
+</script>
+
+
+    <!-- coded by Houdini -->
+	
+	
   </body>
 </html>
