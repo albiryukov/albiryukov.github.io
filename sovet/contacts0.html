@@ -173,14 +173,7 @@
                     <div class="col-12">
                       <button id="form-submit" class="button button-primary" type="submit">Отправить</button>
                     </div>
-							  
-                        <!--  
-					    //Это скрыть
-						<input type="submit" value="submit" onclick="this.style.display='none';">
-
-						//Это заблакировать
-						<input type="submit" value="submit" onclick="this.disabled=true;"> 
-						-->	
+					
 					
                   </div>
                 </form>
@@ -240,13 +233,13 @@
         var inputq3 = encodeURIComponent($('#contact-email').val());
         var inputq4 = encodeURIComponent($('#contact-message').val());
 		
+		
         var baseURL = 'https://docs.google.com/forms/d/1agOIuDIaDdS1Mkz_W1f3vlEqZPtRJuYvTNLwr2ZV7Nc/formResponse?';		
         var submitRef = '&submit=4661412791868902328';
         var submitURL = (baseURL + "=" + inputq0 + "&" + "=" + inputq1 + "&" + "=" + inputq2 + "&" + "=" + inputq3 + "&" + "=" + inputq4 + submitRef);
         console.log(submitURL);
         $(this)[0].action=submitURL;
         $('#input-feedback').text('Ваше сообщение было успешно отправлено!');
-		$("#input-form").hide();
     });
 </script>
 
