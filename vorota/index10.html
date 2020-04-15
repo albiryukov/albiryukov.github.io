@@ -60,42 +60,39 @@
                 <!-- RD Navbar Brand-->
                 <div class="rd-navbar-brand"><a class="brand-name" href="index.html"><img src="images/logo-157x37.png" alt="" width="157" height="37"/></a></div>
               </div>
-			  
-              <!-- 0010 Верхнее меню (сбоку номер телефона) -->
+              <!-- RD Navbar Nav-->
               <div class="rd-navbar-nav-wrap">
                 <div class="rd-navbar-nav-wrap__element"><span class="icon linearicons-telephone"></span><a class="number" onclick="gtag('event', 'topzvonok', { 'event_category': 'topzvonok', 'event_action': 'click0'});" href="tel:+375295541616">+375(29) 554-16-16</a></div>
+                <ul class="rd-navbar-nav">
 				
-                <ul class="rd-navbar-nav">				
-                  <li><a href="#garajvorota">Гаражные&nbsp;ворота</a>
+                  <li><a href="#garajvorota">Гаражные&nbsp;ворота
+                      <!--if (navbarTexts && typeof(item.subtitle) !== 'undefined')-->
+                      <!--  span.rd-navbar-subtitle=item.subtitle--></a>
                   </li>
-                  <li><a href="#otkidnie">Откатные&nbsp;ворота</a>
+                  <li><a href="#otkidnie">Откатные&nbsp;ворота
+                      <!--if (navbarTexts && typeof(item.subtitle) !== 'undefined')-->
+                      <!--  span.rd-navbar-subtitle=item.subtitle--></a>
                   </li>
-                  <li><a href="#zabor">Заборы&nbsp;и&nbsp;калитки</a>
+                  <li><a href="#zabor">Заборы&nbsp;и&nbsp;калитки
+                      <!--if (navbarTexts && typeof(item.subtitle) !== 'undefined')-->
+                      <!--  span.rd-navbar-subtitle=item.subtitle--></a>
                   </li>
-				  
-							<!-- 
-                  <li><a href="#zabor">ТЕКСТ_МЕНЮ_4</a>
-                  </li>
-                  <li><a href="#zabor">ТЕКСТ_МЕНЮ_5</a>
-                  </li>
-							-->
-				  
-                  <li><a href="#contacts">Контакты</a>
+                  <li><a href="#contacts">Контакты
+                      <!--if (navbarTexts && typeof(item.subtitle) !== 'undefined')-->
+                      <!--  span.rd-navbar-subtitle=item.subtitle--></a>
                   </li>
                 </ul>
-				
               </div>
             </div>
           </nav>
         </div>
       </header>
 
-      <!--  0020 - Главный слайдер -->
+      <!-- Slider-->
       <section class="section" id="home">
         <div class="swiper-container swiper-slider swiper-slider_fullheight" data-simulate-touch="false" data-loop="true" data-autoplay="19000">
           <div class="swiper-wrapper">
 		  
-            <!--  0021 - пункты - (клавного слайдера) -->
             <div class="swiper-slide context-dark bg-overlay-dark" data-slide-bg="images/slider-slide-2-1920x1080.jpg">
               <div class="swiper-slide-caption text-center">
                 <div class="container">
@@ -109,8 +106,7 @@
                 </div>
               </div>
             </div>
-					
-            <!--  0022 - пункты - (клавного слайдера) -->	
+						
             <div class="swiper-slide context-dark bg-overlay-dark" data-slide-bg="images/slider-slide-1-1920x1080.jpg">
               <div class="swiper-slide-caption text-center">
                 <div class="container">
@@ -126,7 +122,6 @@
             </div>
 			
 			
-            <!--  0023 - пункты - (клавного слайдера) -->
             <div class="swiper-slide context-dark bg-overlay-dark" data-slide-bg="images/slider-slide-3-1920x1080.jpg">
               <div class="swiper-slide-caption text-center">
                 <div class="container">
@@ -141,21 +136,18 @@
               </div>
             </div>
 			
-          <!--  0024 - пункты - (клавного слайдера) -->	  
-		  
-          <!--  0025 - пункты - (клавного слайдера) -->
 			
           </div>
           <!-- Swiper Navigation-->
           <div class="swiper-button-prev linearicons-chevron-left"></div>
           <div class="swiper-button-next linearicons-chevron-right"></div>
-          <div class="swiper-pagination pagination-mobile"></div>		  		  
+          <div class="swiper-pagination pagination-mobile"></div>
         </div>
       </section>
 
 
 
-      <!-- 1000 Первый блок о ГАРАЖНЫХ ВОРОТАХ-->
+      <!-- Blog-->         <!-- Presentation-->
       <section class="section-md bg-default text-center" id="garajvorota">
         <div class="shell-wide">
 		
@@ -166,11 +158,9 @@
             </div>
           </div>
 		  	
-          <!-- 1010 скользящий слайдер -->
+          <!-- Owl Carousel-->
           <div class="owl-carousel owl-carousel-stagePadding" data-items="1" data-sm-items="2" data-xl-items="3" data-dots="false" data-nav="true" data-stage-padding="0" data-lg-stage-padding="100" data-xl-stage-padding="0" data-loop="true" data-margin="30" data-mouse-drag="false" data-nav-class="[&quot;owl-button-prev fl-budicons-free-left161&quot;,&quot;owl-button-next  fl-budicons-free-right163&quot;]">
 		  
-		  
-           <!-- 1011  первое фото слайдера (скользящий слайдер) -->
             <div class="post-box post-box-minimal post-box-horizontal wow fadeInUp" data-wow-delay=".1s">
                 <figure><img src="images/layout-2-blog-01-460x369.jpg" alt="" width="460" height="369"/>
                 </figure>
@@ -183,7 +173,6 @@
               </div>
             </div>
 			
-           <!-- 1012  второе фото слайдера (скользящий слайдер) -->
             <div class="post-box post-box-minimal post-box-horizontal wow fadeInUp" data-wow-delay=".2s">
                 <figure><img src="images/layout-2-blog-02-460x369.jpg" alt="" width="460" height="369"/>
                 </figure>
@@ -196,7 +185,6 @@
               </div>
             </div>			
 			
-           <!-- 1013  третье фото слайдера (скользящий слайдер) -->
             <div class="post-box post-box-minimal post-box-horizontal wow fadeInUp" data-wow-delay=".3s">
                 <figure><img src="images/layout-2-blog-03-460x369.jpg" alt="" width="460" height="369"/>
                 </figure>
@@ -210,7 +198,7 @@
             </div>			
 			
 			
-			<!--- 1014 раздел гаражные ворота - ГАЛЕРЕЯ ---
+			<!--- раздел гаражные ворота - ГАЛЕРЕЯ ---
  
             <div class="post-box post-box-minimal post-box-horizontal wow fadeInUp" data-wow-delay=".3s"><a class="post-box-image" href="blog-post.html">
                 <figure><img src="images/layout-2-blog-04-460x369.jpg" alt="" width="460" height="369"/>
@@ -231,15 +219,15 @@
 
 
 
-      <!-- 1020 Особенности подъемно-поворотных ворот-->
+      <!-- Our Services-->
       <section class="section-md bg-gray-lighter text-center">
         <div class="container">
           <h4 class="heading-decorated">Особенности подъемно-поворотных ворот</h4>
           <div class="row row-50 justify-content-md-center justify-content-lg-start text-left">
 		  		
-			
-			<!-- 1021 - блок с описанием - Особенности ворот -->	
+				
             <div class="col-md-6 col-xl-4">
+              <!-- Blurb circle-->
               <article class="blurb blurb-minimal">
                 <div class="unit flex-row unit-spacing-md">
                   <div class="unit-left">
@@ -253,8 +241,8 @@
               </article>
             </div>
 			
-			<!-- 1022 - блок с описанием - Особенности ворот -->	
             <div class="col-md-6 col-xl-4">
+              <!-- Blurb circle-->
               <article class="blurb blurb-minimal">
                 <div class="unit flex-row unit-spacing-md">
                   <div class="unit-left">
@@ -268,8 +256,12 @@
               </article>
             </div>
 	
-			<!-- 1023 - блок с описанием - Особенности ворот -->			
+	
+	
+		
+			
             <div class="col-md-6 col-xl-4">
+              <!-- Blurb circle-->
               <article class="blurb blurb-minimal">
                 <div class="unit flex-row unit-spacing-md">
                   <div class="unit-left">
@@ -284,8 +276,8 @@
             </div>
 
 	
-			<!-- 1024 - блок с описанием - Особенности ворот -->	
             <div class="col-md-6 col-xl-4">
+              <!-- Blurb circle-->
               <article class="blurb blurb-minimal">
                 <div class="unit flex-row unit-spacing-md">
                   <div class="unit-left">
@@ -299,8 +291,8 @@
               </article>
             </div>
 			
-			<!-- 1025 - блок с описанием - Особенности ворот -->	
             <div class="col-md-6 col-xl-4">
+              <!-- Blurb circle-->
               <article class="blurb blurb-minimal">
                 <div class="unit flex-row unit-spacing-md">
                   <div class="unit-left">
@@ -314,8 +306,8 @@
               </article>
             </div>
 	
-			<!-- 1026 - блок с описанием - Особенности ворот -->	
             <div class="col-md-6 col-xl-4">
+              <!-- Blurb circle-->
               <article class="blurb blurb-minimal">
                 <div class="unit flex-row unit-spacing-md">
                   <div class="unit-left">
@@ -329,8 +321,8 @@
               </article>
             </div>
 	
-			<!-- 1027 - блок с описанием - Особенности ворот -->	
             <div class="col-md-6 col-xl-4">
+              <!-- Blurb circle-->
               <article class="blurb blurb-minimal">
                 <div class="unit flex-row unit-spacing-md">
                   <div class="unit-left">
@@ -344,8 +336,8 @@
               </article>
             </div>
 	
-			<!-- 1028 - блок с описанием - Особенности ворот -->	
             <div class="col-md-6 col-xl-4">
+              <!-- Blurb circle-->
               <article class="blurb blurb-minimal">
                 <div class="unit flex-row unit-spacing-md">
                   <div class="unit-left">
@@ -359,8 +351,8 @@
               </article>
             </div>
 			
-			<!-- 1029 - блок с описанием - Особенности ворот -->	
             <div class="col-md-6 col-xl-4">
+              <!-- Blurb circle-->
               <article class="blurb blurb-minimal">
                 <div class="unit flex-row unit-spacing-md">
                   <div class="unit-left">
@@ -374,16 +366,13 @@
               </article>
             </div>
 			
-			
-			<!-- 102... - блок с описанием - Особенности ворот -->	
-			
           </div>
         </div>
       </section>
 
 
 
-      <!--- 1030 Раздел с обратной связью - ГАРАЖНЫЕ ВОРОТА --->
+      <!--- Раздел с обратной связью - ГАРАЖНЫЕ ВОРОТА --->
       <section class="section section-md bg-gray-dark section-cta">
         <div class="container">
           <div class="row row-30 align-items-center justify-content-center justify-content-xl-between">
@@ -399,11 +388,9 @@
 
 
 
-      <!-- 2000 - Откатные ворота  -->
+      <!-- распашные ворота -->
       <section class="section-md bg-default text-center" id="otkidnie">
         <div class="shell-wide">
-		
-          <!-- 2010 - описание раздела Откатные ворота  -->
           <div class="row justify-content-lg-center">
             <div class="col-lg-10 col-xl-8">
               <h3 class="heading-decorated">Откатные ворота </h3>
@@ -411,11 +398,9 @@
             </div>
           </div>
 		  	
-		  <!-- 2020 - блок с фотографиями  - Откатные ворота  -->
+          <!-- Owl Carousel-->
           <div class="owl-carousel owl-carousel-stagePadding" data-items="1" data-sm-items="2" data-xl-items="3" data-dots="false" data-nav="true" data-stage-padding="0" data-lg-stage-padding="100" data-xl-stage-padding="0" data-loop="true" data-margin="30" data-mouse-drag="false" data-nav-class="[&quot;owl-button-prev fl-budicons-free-left161&quot;,&quot;owl-button-next  fl-budicons-free-right163&quot;]">
 		  
-		  
-		    <!-- 2021 - блок с описанием - Особенности ворот  -->
             <div class="post-box post-box-minimal post-box-horizontal wow fadeInUp" data-wow-delay=".1s">
                 <figure><img src="images/layout-2-blog-05-460x369.jpg" alt="" width="460" height="369"/>
                 </figure>
@@ -430,7 +415,6 @@
               </div>
             </div>			
 			
-		    <!-- 2022 - блок с описанием - Особенности ворот  -->
             <div class="post-box post-box-minimal post-box-horizontal wow fadeInUp" data-wow-delay=".2s">
                 <figure><img src="images/layout-2-blog-16-460x369.jpg" alt="" width="460" height="369"/>
                 </figure>
@@ -444,8 +428,7 @@
                 </div>
               </div>
             </div>			
-
-		    <!-- 2023 - блок с описанием - Особенности ворот  -->
+			
             <div class="post-box post-box-minimal post-box-horizontal wow fadeInUp" data-wow-delay=".3s">
                 <figure><img src="images/layout-2-blog-08-460x369.jpg" alt="" width="460" height="369"/>
                 </figure>
@@ -460,7 +443,6 @@
               </div>
             </div>		
 			
-		    <!-- 2024 - блок с описанием - Особенности ворот  -->
             <div class="post-box post-box-minimal post-box-horizontal wow fadeInUp" data-wow-delay=".3s">
                 <figure><img src="images/layout-2-blog-15-460x369.jpg" alt="" width="460" height="369"/>
                 </figure>
@@ -473,30 +455,25 @@
                   </div>
                 </div>
               </div>
-            </div>		
-
-<!-- 202... - блок с описанием - Особенности ворот 
-			
-            <div class="post-box post-box-minimal post-box-horizontal wow fadeInUp" data-wow-delay=".3s">
-                <figure><img src="images/layout-2-blog-15-460x369.jpg" alt="" width="460" height="369"/>
-                </figure>
-              <div class="post-box-minimal-caption">
-                <div class="post-box-minimal-caption-inner">                  
-                  <div class="post-box-minimal-meta-bottom">
-                  </div>
-                </div>
-              </div>
             </div>			
--->	
-						
+			
           </div>
         </div>
 		
+        <!-- Распашные ворота небольшое описание -->
+		
+
+
+
+
+      <!-- распашные ворота -->
+	  
+	  
+	  
         <div class="container">
 		<br/>
 		<br/>
 		
-          <!-- 2030 - Преимущества откатных ворот - ОТКАТНЫЕ ВОРОТА -->		
           <div class="row row-30 justify-content-left offset-top-2">
 
           <div class="row justify-content-md-left flex-lg-row-reverse align-items-lg-left justify-content-lg-between row-50">
@@ -552,7 +529,7 @@
 
 
 
-      <!-- 2040 - Раздел с обратной связью - ОТКАТНЫЕ ВОРОТА -->
+      <!-- Раздел с обратной связью - ОТКАТНЫЕ ВОРОТА -->
       <section class="section section-md bg-gray-dark section-cta">
         <div class="container">
           <div class="row row-30 align-items-center justify-content-center justify-content-xl-between">
@@ -563,17 +540,16 @@
             <div class="col-xl-2 text-center"><a onclick="gtag('event', 'contact2', { 'event_category': 'contact2', 'event_action': 'click2'});" class="button button-primary" href="#contacts">Написать</a></div>
           </div>
         </div>
-      </section>     <!-- #КОНЕЦ БЛОКА - 2000 - Откатные ворота  --> 
+      </section>
 
 
 
-
-      <!-- 3000 - Заборы, калитки -  Распашные ворота -->	
+      <!-- Blog  Presentation-->
       <section class="section-md bg-default text-center" id="zabor">
         <div class="shell-wide">
 		<br/>
 		<br/>
-		  <!--3010 - Заборы, калитки -  Распашные ворота небольшое описание -->	
+		
           <div class="row justify-content-lg-center">
             <div class="col-lg-10 col-xl-8">
               <h3 class="heading-decorated">Заборы, калитки</h3>
@@ -581,10 +557,11 @@
             </div>
           </div>
 		  	
-          <!-- 3020 - начало  блока с фотографиями - Особенности ворот -->	
+          <!-- Owl Carousel-->
           <div class="owl-carousel owl-carousel-stagePadding" data-items="1" data-sm-items="2" data-xl-items="3" data-dots="false" data-nav="true" data-stage-padding="0" data-lg-stage-padding="100" data-xl-stage-padding="0" data-loop="true" data-margin="30" data-mouse-drag="false" data-nav-class="[&quot;owl-button-prev fl-budicons-free-left161&quot;,&quot;owl-button-next  fl-budicons-free-right163&quot;]">
-		  	  		  
-			<!-- 3021 - первый блок с фотографиями - Особенности ворот -->	
+		  	  
+		  
+			
             <div class="post-box post-box-minimal post-box-horizontal wow fadeInUp" data-wow-delay=".2s">
                 <figure><img src="images/layout-2-blog-19-460x369.jpg" alt="" width="460" height="369"/>
                 </figure>
@@ -599,7 +576,6 @@
               </div>
             </div>
 			
-			<!-- 3022 - первый блок с фотографиями - Особенности ворот -->	
             <div class="post-box post-box-minimal post-box-horizontal wow fadeInUp" data-wow-delay=".3s">
                 <figure><img src="images/layout-2-blog-11-460x369.jpg" alt="" width="460" height="369"/>
                 </figure>
@@ -615,7 +591,6 @@
             </div>
 			
 			
-			<!-- 3023 - первый блок с фотографиями - Особенности ворот -->	
             <div class="post-box post-box-minimal post-box-horizontal wow fadeInUp" data-wow-delay=".3s">
                 <figure><img src="images/layout-2-blog-12-460x369.jpg" alt="" width="460" height="369"/>
                 </figure>
@@ -631,7 +606,6 @@
             </div>
 			
 			
-			<!-- 3024 - первый блок с фотографиями - Особенности ворот -->	
             <div class="post-box post-box-minimal post-box-horizontal wow fadeInUp" data-wow-delay=".3s">
                 <figure><img src="images/layout-2-blog-13-460x369.jpg" alt="" width="460" height="369"/>
                 </figure>
@@ -646,27 +620,14 @@
               </div>
             </div>
 			
-			
-<!-- 302... - новый блок с фотографиями - Особенности ворот 
-			
-			 <div class="post-box post-box-minimal post-box-horizontal wow fadeInUp" data-wow-delay=".3s">
-                <figure><img src="images/layout-2-blog-13-460x369.jpg" alt="" width="460" height="369"/>
-                </figure>
-              <div class="post-box-minimal-caption">
-                <div class="post-box-minimal-caption-inner">
-                  <div class="post-box-minimal-meta-bottom">
-                  </div>
-                </div>
-              </div>
-            </div>
--->	
-			
+						
           </div>
         </div>
       </section>
 
 
-	  <!-- 2030 - Преимущества изделий из металлопрофиля - Особенности ворот -->	
+
+
       <section class="section-md bg-default text-center">
         <div class="container">
           <div class="row justify-content-md-center justify-content-lg-between row-50 align-items-center text-left wow fadeIn" data-wow-delay="0.3s">
@@ -721,7 +682,9 @@
         </div>
       </section>
 
-	  <!-- 2040 - Преимущества изделий из металлопрофиля -  Раздел с обратной связью - ЗАБОРЫ, КАЛИТКИ -->	  
+
+
+      <!-- Раздел с обратной связью - ЗАБОРЫ, КАЛИТКИ -->	  
       <section class="section section-md bg-gray-dark section-cta">
         <div class="container">
           <div class="row row-30 align-items-center justify-content-center justify-content-xl-between">
@@ -736,18 +699,13 @@
 
 
 
-	  <!-- в это место надо вставлять код 
-	  ниже для добавления ещё одного раздела 
-	  таких блоков моно вставлять сколько хочеться 
-	  -->
-	  
-	  
 
 
-	  <!-- 4000 - Рассчитать стоимость -->	
+
+      <!-- get a quote-->
       <section class="bg-gray-lighter object-wrap otstup" id="contacts">
 	  <br/>
-      <div class="section-lg">
+        <div class="section-lg">
           <div class="container">
             <div class="row justify-content-end">
               <div class="col-lg-5">
@@ -774,22 +732,29 @@
                     <textarea class="form-input" id="contact-message" name="entry.370218059"></textarea>
                     <label class="form-label" for="contact-message">Текст сообщения</label>
                   </div>
-				  
                   <button id="kontakt" onclick="gtag('event', 'kontakt', { 'event_category': 'kontakt', 'event_action': 'click'});" class="button button-primary" type="submit">Отправить</button>
 				  
-				  <!-- 
-				  <form id="input-form" action="" method="POST" target="no-target">
-					 <input id="input-q1" placeholder="q1" name="q1">
-					 <input id="input-q2" placeholder="q2" name="q2">
-					  
-					 <button id="form-submit" type="submit">SUBMIT</button>
-				   </form>
-				   -->
+				  
+				  
+				  
+				  
+<!-- 
+<form id="input-form" action="" method="POST" target="no-target">
+  <input id="input-q1" placeholder="q1" name="q1">
+  <input id="input-q2" placeholder="q2" name="q2">
+  
+  <button id="form-submit" type="submit">SUBMIT</button>
+</form>
+
+  -->
   
                 </form>		
 
 				<p id="input-feedback"></p>
 				<iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
+				
+
+				
 				
 
               </div>
@@ -850,14 +815,14 @@
             </div>
             <div class="col-sm-10 col-md-6 col-lg-5 col-xl-3">
               <div class="google-map-footer">
-              <!--Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.-->
-              <!--Please note that YOUR_API_KEY should replaced with your key.  AIzaSyA8lZpOvtHeEB1Q14vrwKfkYCf50yt5vt0  -->
-              <!--Example: <div class="google-map-container" data-key="AIzaSyA8lZpOvtHeEB1Q14vrwKfkYCf50yt5vt0">
+                <!--Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.-->
+                <!--Please note that YOUR_API_KEY should replaced with your key.  AIzaSyA8lZpOvtHeEB1Q14vrwKfkYCf50yt5vt0  -->
+                <!--Example: <div class="google-map-container" data-key="AIzaSyA8lZpOvtHeEB1Q14vrwKfkYCf50yt5vt0">
 				55.149361, 30.400806
 				55.149348, 30.400802
-			  <div id=”google-map” class=”map_model” data-x="55.149361" data-y="30.400806" ></div>
-			  data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45."
-			  -->
+				<div id=”google-map” class=”map_model” data-x="55.149361" data-y="30.400806" ></div>
+				data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45."
+				-->
                 <div class="google-map-container">
                   <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aac5ea2e0b9e52bd5896a498f5c8e68ef131bdc9ec4f8164d26f34e99a8e0c006&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
@@ -879,23 +844,22 @@
         </div>
       </footer>
     </div>
-	
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
     <!--+photoswipe()-->
-    <!-- Javascript	
-       var inputq1 = encodeURIComponent($('#contact-name').val());
-       var inputq2 = encodeURIComponent($('#contact-phone').val());
-       var inputq3 = encodeURIComponent($('#contact-email').val());
-       var inputq4 = encodeURIComponent($('#contact-message').val());
-       var q1ID = "entry.1118866603";
-       var q2ID = "entry.2022143687";
-       var q3ID = "entry.173183883";
-       var q4ID = "entry.370218059
+    <!-- Javascript
+	
+        var inputq1 = encodeURIComponent($('#contact-name').val());
+        var inputq2 = encodeURIComponent($('#contact-phone').val());
+        var inputq3 = encodeURIComponent($('#contact-email').val());
+        var inputq4 = encodeURIComponent($('#contact-message').val());
+        var q1ID = "entry.1118866603";
+        var q2ID = "entry.2022143687";
+        var q3ID = "entry.173183883";
+        var q4ID = "entry.370218059
 		
-       var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + "&" + q4ID + "=" + inputq4 + submitRef);
-	-->
-		
+        var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + "&" + q4ID + "=" + inputq4 + submitRef);
+		-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
 	<script>
@@ -918,17 +882,11 @@
         $('#input-feedback').text('Ваше сообщение было успешно отправлено!');
 		$("#input-form").hide();
     });
-	</script>
+</script>
+
+
+    <!-- coded by Houdini -->
 	
-    <!-- прокрутка в начало при загрузке -->
-	<script>
-		$(window).on('load', function(){
-		  var top = $(window.location.hash).offset().top;
-		  $('html,body').stop().animate({
-			scrollTop: top
-		  }, 1000);
-		});
-	</script>	
 	
   </body>
 </html>

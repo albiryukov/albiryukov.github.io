@@ -736,18 +736,21 @@
 
 
 
+
+
 	  <!-- в это место надо вставлять код 
 	  ниже для добавления ещё одного раздела 
 	  таких блоков моно вставлять сколько хочеться 
 	  -->
-	  
-	  
 
 
-	  <!-- 4000 - Рассчитать стоимость -->	
+
+
+
+	  <!-- 4000 - Преимущества изделий из металлопрофиля - Особенности ворот -->	
       <section class="bg-gray-lighter object-wrap otstup" id="contacts">
 	  <br/>
-      <div class="section-lg">
+        <div class="section-lg">
           <div class="container">
             <div class="row justify-content-end">
               <div class="col-lg-5">
@@ -774,22 +777,29 @@
                     <textarea class="form-input" id="contact-message" name="entry.370218059"></textarea>
                     <label class="form-label" for="contact-message">Текст сообщения</label>
                   </div>
-				  
                   <button id="kontakt" onclick="gtag('event', 'kontakt', { 'event_category': 'kontakt', 'event_action': 'click'});" class="button button-primary" type="submit">Отправить</button>
 				  
-				  <!-- 
-				  <form id="input-form" action="" method="POST" target="no-target">
-					 <input id="input-q1" placeholder="q1" name="q1">
-					 <input id="input-q2" placeholder="q2" name="q2">
-					  
-					 <button id="form-submit" type="submit">SUBMIT</button>
-				   </form>
-				   -->
+				  
+				  
+				  
+				  
+<!-- 
+<form id="input-form" action="" method="POST" target="no-target">
+  <input id="input-q1" placeholder="q1" name="q1">
+  <input id="input-q2" placeholder="q2" name="q2">
+  
+  <button id="form-submit" type="submit">SUBMIT</button>
+</form>
+
+  -->
   
                 </form>		
 
 				<p id="input-feedback"></p>
 				<iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
+				
+
+				
 				
 
               </div>
@@ -850,14 +860,14 @@
             </div>
             <div class="col-sm-10 col-md-6 col-lg-5 col-xl-3">
               <div class="google-map-footer">
-              <!--Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.-->
-              <!--Please note that YOUR_API_KEY should replaced with your key.  AIzaSyA8lZpOvtHeEB1Q14vrwKfkYCf50yt5vt0  -->
-              <!--Example: <div class="google-map-container" data-key="AIzaSyA8lZpOvtHeEB1Q14vrwKfkYCf50yt5vt0">
+                <!--Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.-->
+                <!--Please note that YOUR_API_KEY should replaced with your key.  AIzaSyA8lZpOvtHeEB1Q14vrwKfkYCf50yt5vt0  -->
+                <!--Example: <div class="google-map-container" data-key="AIzaSyA8lZpOvtHeEB1Q14vrwKfkYCf50yt5vt0">
 				55.149361, 30.400806
 				55.149348, 30.400802
-			  <div id=”google-map” class=”map_model” data-x="55.149361" data-y="30.400806" ></div>
-			  data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45."
-			  -->
+				<div id=”google-map” class=”map_model” data-x="55.149361" data-y="30.400806" ></div>
+				data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45."
+				-->
                 <div class="google-map-container">
                   <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aac5ea2e0b9e52bd5896a498f5c8e68ef131bdc9ec4f8164d26f34e99a8e0c006&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
@@ -879,23 +889,22 @@
         </div>
       </footer>
     </div>
-	
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
     <!--+photoswipe()-->
-    <!-- Javascript	
-       var inputq1 = encodeURIComponent($('#contact-name').val());
-       var inputq2 = encodeURIComponent($('#contact-phone').val());
-       var inputq3 = encodeURIComponent($('#contact-email').val());
-       var inputq4 = encodeURIComponent($('#contact-message').val());
-       var q1ID = "entry.1118866603";
-       var q2ID = "entry.2022143687";
-       var q3ID = "entry.173183883";
-       var q4ID = "entry.370218059
+    <!-- Javascript
+	
+        var inputq1 = encodeURIComponent($('#contact-name').val());
+        var inputq2 = encodeURIComponent($('#contact-phone').val());
+        var inputq3 = encodeURIComponent($('#contact-email').val());
+        var inputq4 = encodeURIComponent($('#contact-message').val());
+        var q1ID = "entry.1118866603";
+        var q2ID = "entry.2022143687";
+        var q3ID = "entry.173183883";
+        var q4ID = "entry.370218059
 		
-       var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + "&" + q4ID + "=" + inputq4 + submitRef);
-	-->
-		
+        var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + "&" + q4ID + "=" + inputq4 + submitRef);
+		-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
 	<script>
@@ -918,17 +927,11 @@
         $('#input-feedback').text('Ваше сообщение было успешно отправлено!');
 		$("#input-form").hide();
     });
-	</script>
+</script>
+
+
+    <!-- coded by Houdini -->
 	
-    <!-- прокрутка в начало при загрузке -->
-	<script>
-		$(window).on('load', function(){
-		  var top = $(window.location.hash).offset().top;
-		  $('html,body').stop().animate({
-			scrollTop: top
-		  }, 1000);
-		});
-	</script>	
 	
   </body>
 </html>
