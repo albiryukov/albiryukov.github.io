@@ -22,6 +22,14 @@
     <script src="js/html5shiv.min.js"></script>
     <![endif]-->
 	
+	
+	<!-- Комментарии Вконтакте  -->
+	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+
+	<script type="text/javascript">
+	  VK.init({apiId: 7466939, onlyWidgets: true});
+	</script>
+	
   </head>
   <body>
     <div class="page">
@@ -346,11 +354,12 @@
 					    </div><!--/#КОНЕЦ - меню раскрывающая -->
 						
 					</div> <!--/#КОНЕЦ - Основная колонка --> 
-					<div class="col-sm-12 col-lg-9 wow-outer"><!--/#ЛЕВАЯ колонка -->
-					<div class="otstup"></div>
+			<div class="col-sm-12 col-lg-9 wow-outer"><!--/#ЛЕВАЯ колонка -->
+			<div class="otstup"></div>
 						  
 
-              <div class="owl-carousel wow slideInLeft" data-items="1" data-dots="true" data-nav="false" data-loop="true" data-margin="30" data-stage-padding="0" data-mouse-drag="false">
+             <div class="owl-carousel wow slideInLeft" data-items="1" data-dots="true" data-nav="false" data-loop="true" data-margin="30" data-stage-padding="0" data-mouse-drag="false">
+			 
                 <blockquote class="quote-modern">
                   <svg class="quote-modern-mark" x="0px" y="0px" width="35px" height="25px" viewbox="0 0 35 25">
                     <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
@@ -401,6 +410,12 @@
                 </blockquote>
               </div>		
 
+				<!-- Комментарии Вконтакте -->
+				<div id="vk_comments"></div>
+				<script type="text/javascript">
+				VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
+				</script>
+
 
 					</div>
 					
@@ -409,6 +424,9 @@
 										  					
 				</div>
             </div><!--/#КОНЕЦ - Блок меню и дополнительной информации-->	
+			
+			
+			
 			
 	  <!-- Page рекламма--><a class="banner banner-top" href="http://www.ewscom.com" target="_blank"><img src="images/monstroid_big.jpg" alt="" height="0"/></a>
       <footer class="section footer-minimal bg-primary-darken">
