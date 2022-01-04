@@ -909,7 +909,9 @@ video {
 
 /*      5.5: Team section
 /* ---------------------------------------------- */
-
+.tel, .mail {
+    color: black;
+}
 .team-member {
     margin: 15px 0;
     padding:0;
@@ -927,7 +929,7 @@ video {
 }
 
 .team-member figcaption p{
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .team-member figcaption ul{
